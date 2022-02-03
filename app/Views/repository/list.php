@@ -152,9 +152,7 @@
                 });
 
                 $('#example tbody').on('click', 'tr', function() {
-                    console.log(this, table);
                     var modal = $('#exampleModal');
-                    console.log(table.row(this).data());
                     modal.find('#exampleModalLabel').text("Github Repository: " + table.row(this).data()[1] + " " + getStars(table.row(this).data()[6]))
                     modal.find('#repo-name').html("Name: " + table.row(this).data()[1])
                     modal.find('#repo-url').html("URL: " + table.row(this).data()[2])
