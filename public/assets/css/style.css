@@ -1,0 +1,70 @@
+body {
+    margin: 2rem;
+}
+
+th {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: grey;
+}
+
+th,
+td {
+    padding: 0.5rem;
+}
+
+td:hover {
+    background-color: lightsalmon;
+}
+
+.paginate_button {
+    border-radius: 0 !important;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/** SPINNER CREATION **/
+
+.loader {
+    position: relative;
+    text-align: center;
+    margin: 15px auto 35px auto;
+    z-index: 9999;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+/** MODAL STYLING **/
+
+.modal-content {
+    border-radius: 0px;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.7);
+}
+
+.modal-backdrop.show {
+    opacity: 0.75;
+}
